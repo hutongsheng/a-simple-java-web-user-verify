@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet{
 			cookieOfUsername.setMaxAge(120);
 			cookieOfPassword.setMaxAge(120);
 			cookieOfUsername.setPath("/");
-//			cookieOfPassword.setPath("/");
+			cookieOfPassword.setPath("/");
 			System.out.println(cookieOfPassword.getPath());
 			System.out.println(cookieOfUsername.getMaxAge());
 			resp.addCookie(cookieOfUsername);
